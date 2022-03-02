@@ -1,0 +1,323 @@
+/* @font-face{
+    font-family: charter;
+    src: url("../fonts/fonts/charter-regular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: charter;
+    src: url("../fonts/fonts/charter-italic.otf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: charter;
+    src: url("../fonts/fonts/charter-bold.otf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: charter;
+    src: url("../fonts/fonts/charter-bold-italic.otf");
+    font-style: italic;
+    font-weight: bold;
+}
+ 
+*/
+/*
+html{
+    font-size: 16px;
+}
+*/
+
+:root{
+    /*Es lo mismo que html, solo con mayor peso semantico*/
+    font-size: 16px;
+    --white30:white;
+    --white20:#A5A3A5;
+    --white10:#3A3539;
+
+}
+
+body{
+    color: var(--white30); 
+    font-family: 'Nunito', sans-serif;
+    /*font-family: charter;*/
+    /*background: khaki;*/
+    background: #251F24;
+    margin: 0;
+    /*Margin inline afecta a los lados del contenido, no a la poscicion del navegador, si se pone writing-mode:vertical-lr; en vez de afectar a la parte de derecha e izquierda el margin, va a afectar a los lados del contendio, que por el writting mode va a tener padding arriba y abajo*/
+    /*margin-inline:100px ;*/
+    /*margin-block: 100px;*/
+    /*margin-block-start: ;*/
+    /* margin-block-end: 50px;*/
+}
+
+a{
+    color: var(--white30) ;
+}
+
+.header{
+   
+}
+
+.header-content{ 
+   padding-inline:20px ;
+
+}
+
+header{
+    /*--white10:red;*/
+    margin-block-start: 20px;
+    font-size: 14px;
+    color: var(--white30) ;
+  
+
+
+}
+
+header li{
+    color: var(--white20);
+    margin-block-end: 16px;
+}
+
+header a{
+color: var(--white20);
+text-decoration: none;
+}
+
+header a:hover{
+    color: var(--white30);
+}
+
+nav details summary {
+    font-weight: bold;
+}
+/*
+ol li:first-child{
+    border:1px orange solid;
+}
+
+ol li:last-child{
+    border:13px red dotted;
+}
+*/
+
+h1,h2,h3{
+    font-weight: normal;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    margin-block-start: 20px;
+    margin-block-end: 16px;
+}
+
+h3{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 2em;
+    margin-block:40px;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-block:16px;
+}
+
+hr{
+    margin-block:40px;
+    border-color: rgba(97, 97, 97, 0.2);
+}
+
+pre{
+    background: var(--white10);
+    padding: 40px;
+    overflow: auto;
+    border-radius: 8px;
+    border: 10px solid red;
+    border-inline-start: 5px solid orange;
+    border-block-end: 20px solid pink;
+    border-inline-end: 5px solid green;
+    border: 10px solid #5551FF; 
+    box-shadow: -10px 10px 0 0 #ABAAF6;
+    margin-block-end: 30px;
+    border-start-start-radius:60px;
+}
+
+p{
+    color: var(--white20);
+}
+.hero{
+    background-image:linear-gradient(96.07deg, #314755, 30.63%, #26A0DA 102.18%);
+    block-size: 50px;
+} 
+ 
+.content img{
+    margin-block-start: 40px;
+    display: block;
+    max-inline-size: 100%;
+}
+
+.content {
+    counter-reset: titleList;
+}
+
+.content h3{
+    counter-increment:titleList;
+}
+.content h3::before{
+    content: counter(titleList, decimal)". ";
+}
+
+/*
+.content h3::after{
+    content: "";
+    width: 32px;
+    height: 4px;
+    background: var(--white30);
+    display:inline-block;
+}   
+*/
+
+blockquote{
+    margin-inline-start: 80px ;
+    margin-inline-end: 63px ;
+    background-color: var(--white10);
+    border-radius: 8px;
+    /*padding: 24px;*/
+    padding-inline-end:24px;
+    padding-inline-start:24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+blockquote p{
+    color: var(--white30);
+}
+
+::selection{
+    background: orange;
+}
+
+.main hr{
+    display: none;
+}
+
+.main {
+    /*border: 1px solid red;*/
+}
+
+.wrapper{
+    /*border: 1px solid yellow;*/
+    max-inline-size: 902px; /*RESPONSIVE WITH THIS LINES*/
+    /*block-size: 100px;*/
+    margin: auto;
+}
+
+.main-content{
+    /*border: 1px solid blue;*/
+    padding-inline: 16px ;
+}
+
+.slider{
+
+}
+
+.slider-container{
+    display:block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+
+
+.video{
+    margin:0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    
+}
+
+.slider-bullet-list{
+    text-align:center;
+    margin-block-start: 10px;
+}
+
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+.form input{
+    width: 100%;
+    height: 40px;
+    background: #251F24;
+    border: 1px solid var(--white30); 
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block:12px;
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form ::-webkit-input-placeholder{
+    color: var(--white20);
+}
+
+.form input[type="submit"]{
+    background-color: #157EFB;
+    border: none;
+}
+
+@media screen and (min-width:1366px){
+
+    .hero{
+        block-size: 350px;
+    }
+.header{
+    position: sticky;
+    inset-block-start:-45px ;
+}
+
+.header-content{
+    position: relative;
+    inset-block-start: 65px ;
+    padding-inline: 0;
+
+}
+
+header{
+    /*--white10:red;*/
+
+    position: absolute;
+    inset-block-start: 0 ;
+    inset-inline-start:-208px;
+    inline-size: 188px;
+}
+
+h1{
+
+    font-size: 60px;
+    margin-block-start: 64px;
+}
+}
