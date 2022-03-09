@@ -327,35 +327,80 @@ pre{
 }
 
 
-@media screen and (max-width:500px){
+
+@media screen and (max-width:1300px){
+
+    
 
     .margin{
-        margin-inline-start:100px;
+        margin-inline-start:50px;
     }
 
     .title{
     
-        margin-inline-start: 100px;
+        margin-inline-start:50px;
       
     }
     .Neuim-cont{
-        margin-inline-start: 100px;
+        margin-inline-start:50px;
         
     }
     .menu-cont{
-        margin-inline-start: 100px;
+        margin-inline-start:50px;
 
     }
    .left-border{
-    left: 90px;
+    left: 50px;
     
     }
 
     .left-border-blockquote{
-        left: 90px;
+        left: 0px;
     }
 
     .submit{
-        left: 659px; 
+        left: 569px; 
     }
 }
+
+
+
+@media screen and (max-width:274px){
+
+    .wrapper{
+        max-width: 800px;
+    }
+
+    .title p{
+        width: 800px;
+    }
+
+    .cont-p{
+        width: 800px;
+    }
+
+    .content-2 p{
+        width: 800px;
+    }
+
+    .content-2 img{
+        width: 800px;
+    }
+
+    pre{
+        width: 800px;
+    }
+
+    .content-3 p{
+        width: 800px;
+    }
+
+    .content-3 li{
+        width: 800px;
+    }
+
+    .slider-container{
+        width: 800px;
+    }
+}
+
