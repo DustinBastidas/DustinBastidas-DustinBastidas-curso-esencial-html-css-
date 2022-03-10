@@ -472,6 +472,11 @@ pre{
         height: 338px;
         font-size: 10px;
     }
+
+    .input{
+        margin-block-end: 16px;       
+        width: 50%px;
+    }
     .submit{
         left: 180px; 
     }
