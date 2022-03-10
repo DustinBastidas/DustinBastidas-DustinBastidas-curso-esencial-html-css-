@@ -389,6 +389,7 @@ pre{
     .title{
         width: 90%;
         margin: auto;
+        margin-inline-start: 50px;
     }
     .main{
         margin: auto;
