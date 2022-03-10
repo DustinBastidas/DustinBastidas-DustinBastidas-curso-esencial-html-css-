@@ -1,30 +1,31 @@
 *{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    width: 966px;
 }
 
 .wrapper{
     max-inline-size: 902px; 
     margin: auto;
 }
+
+.header-content{
+    margin-inline-start: -200px;
+}
 .title{
-    display: block;
-    height: 12px;
-    width: 75%;
     margin-block-start: 80px;
     margin-block-end: 112px;
     margin-inline-start: 204px;
-    margin-inline-end: 196px;
 }
 
 .title h1{
     font-size: 60px; 
+   
 }
 
 .title p{
     margin-block: 36px 64px;
     font-size: 16px;
+    
 }
 
 
@@ -33,8 +34,14 @@
     font-size: 14px;
 }
 
-.margin{
+.sub-marg{
     margin-inline-start: 200px;
+}
+
+
+.menu-cont{
+    margin-inline-start: 200px;
+    position: relative;
 }
 
 .left-border{
@@ -42,7 +49,7 @@
     width: 4px;
     height: 630px;
     background-color: #C4C4C4;
-    left: 190px;
+    left: -30px;
 }
 
 .summary{
@@ -54,10 +61,6 @@
     margin-block-end: 112px;
 }
 
-.menu-cont{
-    margin-inline-start: 200px;
-
-}
 
 .nava{
     margin: 8px 0 8px 0 ;
@@ -80,6 +83,7 @@
   
 }
 /*Ending of navigation*/
+
 
 .content{
 
@@ -107,14 +111,6 @@
 }
 
 
-.left-border-blockquote{
-    width: 4px;
-    height: 52px;
-    position:absolute;
-    background-color:#212121;
-    left: 190px;
-}
-
 blockquote {
     font-size: 24px;
     color: #424242;
@@ -122,6 +118,7 @@ blockquote {
     height: 52px;
     margin: 0;
     margin-inline-start: 16px;
+    position: relative;
 }
 
 blockquote p{
@@ -129,6 +126,15 @@ blockquote p{
     margin-inline-start: 8px;
     color: #616161;
 }
+
+.left-border-blockquote{
+    width: 4px;
+    height: 52px;
+    position:absolute;
+    background-color:#212121;
+    left: -30px;
+}
+
 /*Ending of content #1*/
 
 .content-2{
@@ -258,7 +264,7 @@ pre{
 }
 
 .form-cont{
-
+   
 }
 
 .form-cont h2{
@@ -266,7 +272,7 @@ pre{
 }
 
 .form{
-   
+    position: relative;
 }
 
 .input{
@@ -294,46 +300,20 @@ pre{
     color: white;
     border: none;
     position: absolute;
-    left: 762px;
+    left: 512px;
 
 }
-
-@media screen and (min-width:1900px){
-
-    .margin{
-        margin-inline-start:541px;
-    }
-
-    .title{
-    
-        margin-inline-start: 541px;
-      
-    }
-    .Neuim-cont{
-        margin-inline-start: 541px;
-        
-    }
-    .menu-cont{
-        margin-inline-start: 541px;
-
-    }
-   .left-border{
-    left: 531px;
-    }
-
-    .left-border-blockquote{
-        left: 531px;
-    }
-
-    .submit{
-        left: 1100px;
-    }
-}
-
 
 
 @media screen and (max-width:1300px){
+    .header-content{
+        margin:auto;
+    }
 
+  
+    .sub-marg{
+        margin-inline-start: 50px;
+    }
     .title h1{
         font-size:32px;
     }
@@ -352,13 +332,10 @@ pre{
         font-size: 20px;
     }
 
-    .margin{
-        margin-inline-start:50px;
-    }
+
 
     .title{
-    
-        margin-inline-start:50px;
+        margin-inline-start: 0px;
       
     }
     .Neuim-cont{
@@ -370,57 +347,126 @@ pre{
 
     }
    .left-border{
-    left: 50px;
+    left: -30px;
     
     }
 
     .left-border-blockquote{
-        left: 0px;
+        left: -30px;
     }
 
     .submit{
-        left: 569px; 
+        left: 509px; 
     }
 }
 
 
 
-@media screen and (max-width:274px){
+@media screen and (max-width:1100px){
+ 
+    
+    body{
+        max-width:100%;
+        
+    }
 
+    .header{
+        max-width: 800px;
+    }
     .wrapper{
         max-width: 800px;
     }
+    
 
-    .title p{
-        width: 800px;
+
+    header{
+        width: 100%;
+    }
+    li{
+        width: 100px;
+        margin: 0px;
+    }
+    .title{
+        width: 90%;
+        margin: auto;
+    }
+    .main{
+        margin: auto;
+        max-width: 800px;
     }
 
+    .main-content{
+        max-width: 100%;
+    }
+
+  
     .cont-p{
-        width: 800px;
+        width: 100%;
+    }
+
+    blockquote{
+        width: 100%;
+        font-size: 20px;
+    }
+    .content,.content-2,.content-3, .section-content, .mailto,.form-cont{
+        width: 100%;
+        margin-inline-start: 25px;
     }
 
     .content-2 p{
-        width: 800px;
+        width: 100%;
     }
 
     .content-2 img{
-        width: 800px;
+        width: 100%;
     }
 
     pre{
-        width: 800px;
+        width: 100%;
+        font-size: 14px;
     }
 
     .content-3 p{
-        width: 800px;
+        width: 100%;
     }
 
     .content-3 li{
-        width: 800px;
+        width: 100%;
     }
 
-    .slider-container{
-        width: 800px;
+    .slider{
+        max-width: 960;
+        margin: 0;
     }
+    .slider-container{
+        max-width: 960;
+    }
+
+    .left-border{
+        left: -30px;
+        
+        }
+    
+        .left-border-blockquote{
+            left: -30px;
+        }
+    
+        .input{
+            
+            width: 50%px;
+        }
+
+        .input:nth-of-type(2){
+            margin-inline-start: 0;
+            
+        }
+        .submit{
+            left: 450px; 
+        }
 }
 
+@media screen and (max-width:583px){
+    .submit{
+        left: 180px; 
+    }
+}
