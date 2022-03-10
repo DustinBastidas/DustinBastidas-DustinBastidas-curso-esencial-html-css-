@@ -422,8 +422,9 @@ pre{
     }
 
     pre{
-        width: 100%;
-        font-size: 14px;
+        width: 90%;
+        height: 338px;
+        font-size: 12px;
     }
 
     .content-3 p{
@@ -466,6 +467,11 @@ pre{
 }
 
 @media screen and (max-width:583px){
+    pre{
+        width: 90%;
+        height: 338px;
+        font-size: 10px;
+    }
     .submit{
         left: 180px; 
     }
