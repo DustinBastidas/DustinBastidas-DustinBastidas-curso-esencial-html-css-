@@ -191,6 +191,7 @@ ul li::marker{
     width: 100%;
     overflow: scroll;
     white-space: nowrap;
+    scroll-behavior:    smooth;
 }
 
 .slider-slide{
