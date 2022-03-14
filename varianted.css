@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header{
+    font-size: 14px;
+}
+.header{
+    width: 100%;
+}
+
+.wrapper{
+    margin: auto;
+    max-inline-size: 328px;
+}
+.hero{
+    background: url("Recursos/backgroung\ \(1\).png");
+    background-size:cover;
+    height: 350px;
+    margin-block-end: 16px;
+}
+
+.Neuim-cont{
+    margin-block-end: 48px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Neuim-title{
+    margin-block-end: 16px;
+
+}
+
+.Neuim{
+    display: flex;
+    height: 40px;
+    text-decoration: none;
+    color: #616161;   
+    align-items: center;
+    border-radius: 10px;
+    padding:5px;
+    padding-left: 10px;
+}
+
+
+.Neuim:hover{
+    background-color: black;
+    color: white;  
+}
+
+summary{
+    font-weight: 700;
+}
+
+details{
+    margin-block-end: 40px;
+}
+
+details ol{
+    padding: 0px;
+}
+details ul{
+    padding: 0px;
+    margin-block: 16px;
+}
+
+details ul a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    padding-left: 10px;
+}
+details ul :hover  {
+    color: white;
+    background-color: #5551FF;
+}
+.summary-2{
+    color: #00000080;
+}
+
+.content{
+    text-align: center;
+}
+
+
+.content h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-block-end:16px ;
+}
+
+.content .title-p{
+    color: #545454;
+    line-height: 24px;
+    margin-block-end: 40px;
+}
+
+.content h2{
+    margin-block: 40px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h2:nth-of-type(1){
+    font-size: 32px;
+}
+
+.content img{
+    margin-block:40px 16px;
+}
+
+
+.content h3{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.content p{
+    color: #545454;
+    margin: 0;
+    margin-block-end: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+blockquote{
+    position: relative;
+    margin-block: 40px;
+    text-align: initial;
+    line-height: 32px;
+}
+
+blockquote p{
+    margin-block-start: 5px;    
+}
+
+.left-border{
+    height: 96px;
+    position: absolute;
+    width: 4px;
+    background-color: #5551FF;
+    left: -16px;
+}
+ pre{
+    overflow: scroll;
+    border: 5px solid #5551FF;
+    box-shadow: -10px 10px 0px 0px #ABAAF6;
+    text-align: initial;
+}
+
+.content .img-2{
+    width: 100%;
+    font-size: 16px;
+}
+
+.content li{
+    color: #545454;
+}
+
+.content ol{
+    padding-left: 18px;
+    margin-block-end:40px;
+}
+
+.content ul{
+    padding-left: 14px;
+    margin-block-end:40px;
+
+}
+.content ol li{
+    margin-block: 5px;
+}
+
+.content ul li{
+    margin-block:16px;
+}
+
+ul li::marker{
+    color: #5551FF;
+}
+.align{
+    text-align: initial;
+}
+
+.slider-container{
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+.slider-slide{
+    width: 10px;
+}
+
+.video{
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    margin-block: 16px 72px;
+}
+
+.slider-bullet{
+    display: inline-block;
+    background-color: #8E2DE280;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+
+.slider-bullet:hover{
+    background: #5551FF;
+    transition:.5s ease-in;
+}
+
+.bibliografia{
+    color: #545454;
+    line-height: 24px;
+    margin-block-end: 40px;
+}
+
+
+.section-content{
+    width: 100%;
+}
+
+.section-content h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form{
+    position: relative;
+}
+
+.insert{
+    display: block;
+    width:70%;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-top:12px ;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 64px;
+    height: 24px;
+    margin-block-end: 16px;
+    color: black;
+}
+
+.submit{
+    width: 35%;
+    height: 50px;
+    position: absolute;
+    right: 12px;
+    top: 66px;
+    border: none;
+    color: white;
+    border-radius: 90px;
+    background: #5551FF;
+
+}
+
+@media screen and (min-width:603px){
+    .wrapper{
+        margin: auto;
+        max-inline-size: 503px;
+    }
+
+  
+.left-border{
+    height: 80px;
+}
+
+blockquote .p{
+    margin-block-end: 30px;
+    margin-block-start: 16px;
+}
+}
+
+@media screen and (min-width:903px){
+    .wrapper{
+        margin: auto;
+        max-inline-size: 803px;
+    }
+} 
+
+@media screen and (min-width:1300px){
+    
+} 
