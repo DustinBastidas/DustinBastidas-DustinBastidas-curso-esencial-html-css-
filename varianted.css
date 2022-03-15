@@ -19,7 +19,7 @@ header{
 .hero{
     background: url("Recursos/backgroung\ \(1\).png");
     background-size:cover;
-    height: 350px;
+    block-size: 350px;
     margin-block-end: 16px;
 }
 
@@ -63,7 +63,7 @@ details ol{
 }
 details ul{
     padding: 0px;
-    margin-block: 16px;
+    margin-block: 16px; 
 }
 
 details ul a{
@@ -266,7 +266,7 @@ ul li::marker{
     top: 66px;
     border: none;
     color: white;
-    border-radius: 90px;
+    border-radius: 30px;
     background: #5551FF;
 
 }
@@ -276,6 +276,17 @@ ul li::marker{
         margin: auto;
         max-inline-size: 503px;
     }
+
+    .insert{
+        width: 60%;
+    }
+
+    .submit{
+        width: 25%;
+        top: 66px;
+        right: 115px;
+    }
+
 
   
 .left-border{
@@ -293,8 +304,81 @@ blockquote .p{
         margin: auto;
         max-inline-size: 803px;
     }
+
+    .insert{
+        display: inline-block;
+        width: 35%;
+    }
+
+    .insert:nth-of-type(2){
+        margin-inline-start: 22px;
+    }
+    .submit{
+        width: 18%;
+        top: 0px;
+        right: 49px;
+    }
+     
+    details ol{
+        width: 60%;
+    }
+
+    .Neuim{
+        width: 60%;
+    }
 } 
 
-@media screen and (min-width:1300px){
+@media screen and (min-width:1454px){
+    .header{
+        position: sticky;
+        inset-block-start:-45px ;
+    }
     
+    .header-content{
+        position: relative;        
+        inset-block-start: 40px ;
+    }
+    header{
+        /*--white10:red;*/
+        position: absolute;
+        inset-block-start: 0 ;
+        inset-inline-start:1000px;
+        width: 100%;
+    }
+    
+
+    details ol{
+        width: 40%;
+    }
+
+    .Neuim{
+        width: 40%;
+    }
+
+    main {
+        margin-inline-start: -3%;
+    }
+
+    .wrapper{
+        width: 100%;
+        margin-left: 500px;
+        max-inline-size: 1000px;
+    }
+
+
+    .content h1{
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .content h2{
+        font-size: 32px;
+    }
+
+    .content h3{
+        font-size: 24px;
+    }
+
+
+  
 } 
