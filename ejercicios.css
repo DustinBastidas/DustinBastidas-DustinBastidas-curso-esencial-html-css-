@@ -221,7 +221,7 @@ body h2{
     margin: auto;
     overflow: scroll;
     white-space:nowrap;
-    max-width: 90%;
+    max-width: 60%;
     scroll-behavior: smooth;
     margin-block-start: 20px;
 }
@@ -335,7 +335,7 @@ body h2{
     text-align: left;
     margin-left:10%;
     width: 80%;
-    height: 500px;
+    height: 300px;
     position: relative;
 }
 
@@ -380,9 +380,16 @@ input:focus+label{
     transform:translate(0,-30px);
 }
 
+
 @media screen and (max-width:800px){
 
    
+label{
+    font-size: 15px;
+    color: white;
+    margin-inline-start: 145px;
+    position: absolute;
+}
     main{
         margin: auto;
         max-width: 700px;
@@ -398,11 +405,36 @@ input:focus+label{
     width: 90%;
 }
     
+.animated-slider-container{
+    max-width: 85%;
+}
 
     }
 
 
 
+    @media screen and (max-width :500px){
+        label{
+            margin-inline-start: 120px;
+    
+        }
+    }
+
+
+    @media screen and (max-width :400px){
+        input{
+            height: 30px;
+        }
+
+        label{
+            margin-inline-start: 100px;    
+        }
+
+        label:nth-of-type(3) {
+            width: 100px;
+        }
+        
+    }
 @media screen and (min-width:800px){
  
 
