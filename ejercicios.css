@@ -319,6 +319,57 @@ body h2{
 .grid-img img{
     width: 100%;
 }
+
+.grid-template{
+    width:90%;
+    margin: auto;
+    height: 700px;
+    display: grid;
+    grid-template-areas: "header header header header" "main main sidebar sidebar" "main main sidebar sidebar" "footer footer footer footer" ;
+}
+
+.object-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    grid-area: header;
+    background-color: crimson;
+
+}
+
+.object-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    background-color: mediumvioletred;
+    grid-area: sidebar;
+
+}
+
+.object-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    background-color: darkorange;
+    grid-area: main;
+
+}
+
+.object-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    background-color: rebeccapurple;
+    grid-area: footer;
+}
     footer{
     width: 100%;
     background-color: rgb(16, 15, 15);
